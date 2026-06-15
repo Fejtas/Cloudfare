@@ -1,0 +1,131 @@
+/* Základní reset a nastavení fontu */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hlavička */
+header {
+    background-color: #f38020; /* Typická Cloudflare oranžová */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Hlavní obsah a karty */
+main {
+    padding: 40px 0;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    border-left: 5px solid #f38020;
+}
+
+.card h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Seznam služeb */
+.services-list {
+    list-style-type: none;
+}
+
+.services-list li {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.services-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.services-list strong {
+    display: block;
+    font-size: 1.2rem;
+    color: #f38020;
+    margin-bottom: 5px;
+}
+
+/* Patička */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2c3e50;
+    color: white;
+    font-size: 0.9rem;
+} 
+/* Styl pro tlačítko přepínače */
+.theme-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #2c3e50;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.theme-btn:hover {
+    background-color: #1a252f;
+}
+
+/* --- TŘÍDY PRO TMAVÝ REŽIM --- */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .card {
+    background: #1e1e1e;
+    border-left: 5px solid #d35400;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .card h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .card p {
+    color: #cccccc;
+}
+
+body.dark-mode .services-list border {
+    border-color: #333;
+}
